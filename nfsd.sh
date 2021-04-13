@@ -74,7 +74,6 @@ else
   /bin/sed -i "s/{{SYNC}}/sync/g" /etc/exports
 fi
 
-<<<<<<< HEAD
 # Check if the CUSTOM_EXPORTS_CONFIG variable is set, and if it is, clear the
 # /etc/exports file that's already present and replace it with the contents
 # of the CUSTOM_EXPORTS_CONFIG variable
@@ -91,8 +90,6 @@ if [ ! -z "${CUSTOM_EXPORTS_CONFIG}" ]; then
 fi
 # END OF JAMES CODE
 
-=======
->>>>>>> nfs-server-fork/master
 # Partially set 'unofficial Bash Strict Mode' as described here: http://redsymbol.net/articles/unofficial-bash-strict-mode/
 # We don't set -e because the pidof command returns an exit code of 1 when the specified process is not found
 # We expect this at times and don't want the script to be terminated when it occurs
